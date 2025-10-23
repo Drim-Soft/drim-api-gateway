@@ -29,11 +29,3 @@ services:
         paths:
           - "/projects"
         strip_path: false
-
-  - name: planifika-users-service
-    url: "${PLANIFIKA_USERS_URL}"
-    routes:
-      - name: planifika-users-route
-        paths:
-          - "/planifika-users"
-        strip_path: false
