@@ -16,8 +16,6 @@ services:
       # 👇 Variables de entorno de tus microservicios
       ORGANIZATIONS_URL: ${ORGANIZATIONS_URL}
       DRIM_USERS_URL: ${DRIM_USERS_URL}
-      PROJECTS_URL: ${PROJECTS_URL}
-      PLANIFIKA_USERS_URL: ${PLANIFIKA_USERS_URL}
 
     volumes:
       - ./kong.yml:/usr/local/kong/declarative/kong.yml
