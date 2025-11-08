@@ -8,33 +8,33 @@ services:
       # CRUD
       - name: get-organizations-route
         paths:
-          - "/api/v1/organizations"
+          - "/organizations"
         strip_path: false
 
       - name: get-organization-by-id-route
         paths:
-          - "~/api/v1/organizations/\\d+"
+          - "~/organizations/\\d+"
         strip_path: false
 
       - name: create-organization-route
         paths:
-          - "/api/v1/organizations"
+          - "/organizations"
         strip_path: false
 
       - name: update-organization-route
         paths:
-          - "~/api/v1/organizations/\\d+"
+          - "~/organizations/\\d+"
         strip_path: false
 
       - name: delete-organization-route
         paths:
-          - "~/api/v1/organizations/\\d+"
+          - "~/organizations/\\d+"
         strip_path: false
 
       # Usuarios de una organización
       - name: get-users-by-organization-route
         paths:
-          - "~/api/v1/organizations/\\d+/users"
+          - "~/organizations/\\d+/users"
         strip_path: false
 
 
@@ -44,58 +44,58 @@ services:
       # Auth
       - name: login-route
         paths:
-          - "/api/v1/auth/login"
+          - "/auth/login"
         strip_path: false
 
       - name: drim-logout-route
         paths:
-          - "/api/v1/auth/logout"
+          - "/auth/logout"
         strip_path: false
 
       # CRUD
       - name: get-users-route
         paths:
-          - "/api/v1/users"
+          - "/users"
         strip_path: false
 
       - name: get-user-by-id-route
         paths:
-          - "~/api/v1/users/\\d+"
+          - "~/users/\\d+"
         strip_path: false
 
       - name: create-user-route
         paths:
-          - "/api/v1/users"
+          - "/users"
         strip_path: false
 
       - name: update-user-route
         paths:
-          - "~/api/v1/users/\\d+"
+          - "~/users/\\d+"
         strip_path: false
 
       - name: delete-user-route
         paths:
-          - "~/api/v1/users/\\d+"
+          - "~/users/\\d+"
         strip_path: false
 
       # Role
       - name: get-roles-route
         paths:
-          - "/api/v1/roles"
+          - "/roles"
         strip_path: false
 
       - name: get-role-by-id-route
         paths:
-          - "~/api/v1/roles/\\d+"
+          - "~/roles/\\d+"
         strip_path: false
 
       - name: patch-user-role-route
         paths:
-          - "~/api/v1/users/\\d+/roles/\\d+"
+          - "~/users/\\d+/roles/\\d+"
         strip_path: false
 
       # UserStatus
       - name: update-user-status-route
         paths:
-          - "~/api/v1/users/\\d+/status/\\d+"
+          - "~/users/\\d+/status/\\d+"
         strip_path: false
